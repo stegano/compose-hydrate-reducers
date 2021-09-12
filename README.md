@@ -37,5 +37,13 @@ const reducers = combineReducers(
     ...
   });
 )
+
+type RootState = ReturnType<typeof reducers>;
+
+// create a makeStore function
+const makeStore = () => createStore(reducers);
+
+// export an assembled wrapper
+export const wrapper = createWrapper<Store<RootState>>(makeStore, { debug: true });
 ...
 ```
