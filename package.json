@@ -1,8 +1,8 @@
 {
   "name": "compose-hydrate-reducers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatically handles the `HYDRATE` action executed by next-redux-wrapper.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "eslint 'src/**/*.ts'",
     "lint:fix": "eslint 'src/**/*.ts' --fix",
