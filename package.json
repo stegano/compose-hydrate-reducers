@@ -1,6 +1,6 @@
 {
   "name": "compose-hydrate-reducers",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Automatically handles the `HYDRATE` action executed by next-redux-wrapper.",
   "main": "dist/index.js",
   "scripts": {
