@@ -28,7 +28,11 @@ const composeHydrateReducer = (
          * Let Hydrate run only once in a CSR environment.
          * @see https://github.com/kirill-konshin/next-redux-wrapper/issues/280
          */
-        Object.assign(newState, { [hydrated]: true });
+        return {
+          ...state,
+          ...newState,
+          [hydrated]: true,
+        };
       }
       return {
         ...state,
